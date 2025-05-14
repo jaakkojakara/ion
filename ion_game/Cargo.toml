@@ -1,0 +1,14 @@
+[package]
+name = "ion_game"
+version = "0.1.0"
+edition = "2024"
+license = "All Rights Reserved"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+ion_common = { path = "../ion_common" }
+ion_engine = { path = "../ion_engine" }
+bincode = "2.0.1"
+image = { version = "0.25", default-features = false, features = ["png"] }

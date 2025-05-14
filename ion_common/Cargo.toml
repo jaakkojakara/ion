@@ -1,0 +1,25 @@
+[package]
+name = "ion_common"
+version = "0.1.0"
+edition = "2024"
+license = "All Rights Reserved"
+
+[features]
+# Enables compilation of debug-level logging statements. Normally these are not compiled at all
+log_dbg = []
+# Enables compilation of trace-level logging statements. Normally these are not compiled at all
+log_trc = []
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# Binary codec
+bincode = "2.0.1"
+
+# JavaScript Bindings
+js-sys = "0.3.77"
+web-sys = { version = "0.3.77", features = ["Window", "Element", "XmlHttpRequest", "XmlHttpRequestResponseType", "Document", "ProgressEvent", "Worker", "WorkerOptions", "Storage", "IdbFactory", "IdbDatabase", "IdbOpenDbRequest", "IdbRequest", "IdbObjectStore", "IdbTransaction", "IdbTransactionMode", "IdbRequestReadyState", "IdbCursorDirection", "IdbCursor", "DomException"] }
+wasm-bindgen = "0.2.100"
+
+

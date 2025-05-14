@@ -1,0 +1,15 @@
+# Mac
+**/.DS_Store
+
+# Rust
+**/target
+
+# Assets
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.bmp
+**/*.webp
+**/*.ico
+**/*.svg
